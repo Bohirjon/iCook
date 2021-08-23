@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:ICook/Abstractions/BaseFoodReceiptApi.dart';
-import 'package:ICook/Model/SearchResultRoot.dart';
+import 'package:icook/abstractions/BaseFoodReceiptApi.dart';
+import 'package:icook/model/SearchResultRoot.dart';
 
 class MockFoodReceiprtApi extends BaseFoodReceipt {
   @override

@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:ICook/Abstractions/BaseFoodReceiptApi.dart';
-import 'package:ICook/AppConstants.dart';
-import 'package:ICook/Model/SearchResultRoot.dart';
+import 'package:icook/AppConstants.dart';
+import 'package:icook/abstractions/BaseFoodReceiptApi.dart';
+import 'package:icook/model/SearchResultRoot.dart';
 import 'package:http/http.dart' as http;
 
 class FoodReceiptApi extends BaseFoodReceipt {
@@ -14,10 +14,12 @@ class FoodReceiptApi extends BaseFoodReceipt {
   }
 
   @override
-  Future<SearchResultRoot> searchFood(String searchKey) async {
+  Future<SearchResultRoot> searchFood(String searchkey) async {
     var query =
-        '?$ApiKey=$ApiKeyVallue&$IncludeNutritionHeaderKey=$IncludeNutritionHeaderValue&query=$searchKey';
-    var response = await http.get(FoodServiceHosturi + query);
+        '?$ApiKey=$ApiKeyVallue&$IncludeNutritionHeaderKey=$IncludeNutritionHeaderValue&query=$searchkey';
+
+    final uri = Uri.parse(FoodServiceHosturi + query);
+    var response = await http.get(uri);
     if (response.statusCode != 200) {
       throw new Exception(response.reasonPhrase);
     }

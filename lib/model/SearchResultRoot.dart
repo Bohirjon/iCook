@@ -1,4 +1,4 @@
-import 'package:ICook/Model/SearchResult.dart';
+import 'package:icook/model/SearchResult.dart';
 
 class SearchResultRoot {
   List<SearchResult> results;
@@ -10,7 +10,7 @@ class SearchResultRoot {
 
   SearchResultRoot.fromJson(Map<String, dynamic> json) {
     if (json['results'] != null) {
-      results = new List<SearchResult>();
+      results = <SearchResult>[];
       json['results'].forEach((v) {
         results.add(new SearchResult.fromJson(v));
       });

@@ -1,5 +1,5 @@
-import 'package:ICook/Model/SearchResultRoot.dart';
-import 'package:ICook/ViewModels/FoodsSearchViewModel.dart';
+import 'package:icook/model/SearchResultRoot.dart';
+import 'package:icook/viewModels/FoodsSearchViewModel.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

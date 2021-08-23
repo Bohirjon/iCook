@@ -1,6 +1,6 @@
-import 'package:ICook/Abstractions/BaseFoodReceiptApi.dart';
-import 'package:ICook/Abstractions/BaseNavigationService.dart';
-import 'package:ICook/Model/SearchResultRoot.dart';
+import 'package:icook/abstractions/BaseFoodReceiptApi.dart';
+import 'package:icook/abstractions/BaseNavigationService.dart';
+import 'package:icook/model/SearchResultRoot.dart';
 import 'package:rxdart/rxdart.dart';
 
 class FoodsSearchViewModel {
@@ -25,7 +25,7 @@ class FoodsSearchViewModel {
   void searchFoods() async {
     isLoading.add(true);
     try {
-      var result = await _baseFoodReceipt.searchFood(searchString.value);
+      final result = await _baseFoodReceipt.searchFood(searchString.value);
       searchResultRoot.add(result);
     } catch (e) {
       await _navigationService.showDialogAsync(
