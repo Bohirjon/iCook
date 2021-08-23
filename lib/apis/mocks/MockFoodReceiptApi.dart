@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:icook/abstractions/BaseFoodReceiptApi.dart';
+import 'package:icook/model/RecipeInformation.dart';
 import 'package:icook/model/RecipeRoot.dart';
 
 class MockFoodReceiprtApi extends BaseFoodReceipt {
@@ -83,5 +84,11 @@ class MockFoodReceiprtApi extends BaseFoodReceipt {
     var jsonDecoded = json.decode(jsonString);
     var result = RecipeRoot.fromJson(jsonDecoded);
     return result;
+  }
+
+  @override
+  Future<RecipeInformation> getRecipeInformation(int recipeId) {
+    // TODO: implement getRecipeInformation
+    throw UnimplementedError();
   }
 }
