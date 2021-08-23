@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:icook/AppConstants.dart';
 import 'package:icook/abstractions/BaseFoodReceiptApi.dart';
-import 'package:icook/model/SearchResultRoot.dart';
 import 'package:http/http.dart' as http;
+import 'package:icook/model/RecipeRoot.dart';
 
 class FoodReceiptApi extends BaseFoodReceipt {
   Map<String, String> _headers;
@@ -14,7 +14,7 @@ class FoodReceiptApi extends BaseFoodReceipt {
   }
 
   @override
-  Future<SearchResultRoot> searchFood(String searchkey) async {
+  Future<RecipeRoot> search(String searchkey) async {
     var query =
         '?$ApiKey=$ApiKeyVallue&$IncludeNutritionHeaderKey=$IncludeNutritionHeaderValue&query=$searchkey';
 
@@ -24,7 +24,7 @@ class FoodReceiptApi extends BaseFoodReceipt {
       throw new Exception(response.reasonPhrase);
     }
     var jsonResponse = json.decode(response.body);
-    var resullt = SearchResultRoot.fromJson(jsonResponse);
+    var resullt = RecipeRoot.fromJson(jsonResponse);
     return resullt;
   }
 }

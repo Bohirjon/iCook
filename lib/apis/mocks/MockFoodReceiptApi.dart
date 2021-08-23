@@ -1,18 +1,9 @@
 import 'dart:convert';
 
 import 'package:icook/abstractions/BaseFoodReceiptApi.dart';
-import 'package:icook/model/SearchResultRoot.dart';
+import 'package:icook/model/RecipeRoot.dart';
 
 class MockFoodReceiprtApi extends BaseFoodReceipt {
-  @override
-  Future<SearchResultRoot> searchFood(String searchkey) async {
-    await Future.delayed(Duration(milliseconds: 240));
-    var jsonString = _getJson();
-    var jsonDecoded = json.decode(jsonString);
-    var result = SearchResultRoot.fromJson(jsonDecoded);
-    return result;
-  }
-
   String _getJson() {
     return '''
 {
@@ -83,5 +74,14 @@ class MockFoodReceiprtApi extends BaseFoodReceipt {
     "totalResults": 5078
 }
 ''';
+  }
+
+  @override
+  Future<RecipeRoot> search(String searchkey) async {
+    await Future.delayed(Duration(milliseconds: 240));
+    var jsonString = _getJson();
+    var jsonDecoded = json.decode(jsonString);
+    var result = RecipeRoot.fromJson(jsonDecoded);
+    return result;
   }
 }

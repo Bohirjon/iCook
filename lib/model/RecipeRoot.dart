@@ -1,18 +1,18 @@
-import 'package:icook/model/SearchResult.dart';
+import 'package:icook/model/Recipe.dart';
 
-class SearchResultRoot {
-  List<SearchResult> results;
+class RecipeRoot {
+  List<Recipe> results;
   int offset;
   int number;
   int totalResults;
 
-  SearchResultRoot({this.results, this.offset, this.number, this.totalResults});
+  RecipeRoot({this.results, this.offset, this.number, this.totalResults});
 
-  SearchResultRoot.fromJson(Map<String, dynamic> json) {
+  RecipeRoot.fromJson(Map<String, dynamic> json) {
     if (json['results'] != null) {
-      results = <SearchResult>[];
+      results = <Recipe>[];
       json['results'].forEach((v) {
-        results.add(new SearchResult.fromJson(v));
+        results.add(Recipe.fromJson(v));
       });
     }
     offset = json['offset'];

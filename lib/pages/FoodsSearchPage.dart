@@ -1,4 +1,4 @@
-import 'package:icook/model/SearchResultRoot.dart';
+import 'package:icook/model/RecipeRoot.dart';
 import 'package:icook/viewModels/FoodsSearchViewModel.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -68,7 +68,7 @@ class FoodsSearchPage extends StatelessWidget {
   }
 
   Widget _foodsListWidget(BuildContext context) {
-    return StreamBuilder<SearchResultRoot>(
+    return StreamBuilder<RecipeRoot>(
       stream: _foodsSearchViewModel.searchResultRoot,
       builder: (context, snapshot) {
         if (snapshot.hasData && snapshot.data.results.length > 0) {

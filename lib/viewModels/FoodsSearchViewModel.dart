@@ -1,6 +1,6 @@
 import 'package:icook/abstractions/BaseFoodReceiptApi.dart';
 import 'package:icook/abstractions/BaseNavigationService.dart';
-import 'package:icook/model/SearchResultRoot.dart';
+import 'package:icook/model/RecipeRoot.dart';
 import 'package:rxdart/rxdart.dart';
 
 class FoodsSearchViewModel {
@@ -9,7 +9,7 @@ class FoodsSearchViewModel {
 
   final searchString = BehaviorSubject.seeded('');
 
-  final searchResultRoot = BehaviorSubject<SearchResultRoot>.seeded(null);
+  final searchResultRoot = BehaviorSubject<RecipeRoot>.seeded(null);
   final isLoading = BehaviorSubject<bool>.seeded(false);
 
   FoodsSearchViewModel(this._baseFoodReceipt, this._navigationService) {
@@ -25,7 +25,7 @@ class FoodsSearchViewModel {
   void searchFoods() async {
     isLoading.add(true);
     try {
-      final result = await _baseFoodReceipt.searchFood(searchString.value);
+      final result = await _baseFoodReceipt.search(searchString.value);
       searchResultRoot.add(result);
     } catch (e) {
       await _navigationService.showDialogAsync(

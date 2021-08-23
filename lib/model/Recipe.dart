@@ -1,12 +1,12 @@
-class SearchResult {
+class Recipe {
   int id;
   String title;
   String image;
   String imageType;
 
-  SearchResult({this.id, this.title, this.image, this.imageType});
+  Recipe({this.id, this.title, this.image, this.imageType});
 
-  SearchResult.fromJson(Map<String, dynamic> json) {
+  Recipe.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     title = json['title'];
     image = json['image'];

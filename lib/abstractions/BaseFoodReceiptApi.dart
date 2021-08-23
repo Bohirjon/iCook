@@ -1,5 +1,5 @@
-import 'package:icook/model/SearchResultRoot.dart';
+import 'package:icook/model/RecipeRoot.dart';
 
 abstract class BaseFoodReceipt {
-  Future<SearchResultRoot> searchFood(String searchkey);
+  Future<RecipeRoot> search(String searchkey);
 }
