@@ -1,5 +1,5 @@
 import 'package:icook/abstractions/BaseNavigationService.dart';
-import 'package:icook/Pages/FoodsSearchPage.dart';
+import 'package:icook/pages/FoodsSearchPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -19,5 +19,11 @@ class NavigationService extends BaseNavigationService {
         );
       },
     );
+  }
+
+  @override
+  Future navigate(Widget page) {
+    final materialRoute = MaterialPageRoute(builder: (context) => page);
+    return Navigator.of(globalContext).push(materialRoute);
   }
 }

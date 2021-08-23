@@ -1,6 +1,7 @@
 import 'package:icook/abstractions/BaseFoodReceiptApi.dart';
 import 'package:icook/abstractions/BaseNavigationService.dart';
 import 'package:icook/model/RecipeRoot.dart';
+import 'package:icook/pages/RecipeInformationPage.dart';
 import 'package:rxdart/rxdart.dart';
 
 class FoodsSearchViewModel {
@@ -37,5 +38,10 @@ class FoodsSearchViewModel {
 
   void clearFoods() {
     searchResultRoot.add(null);
+  }
+
+  void navigateRecipeInformation(int recipeId) async {
+    final recipeIformationPage = RecipeInformationPage(recipeId);
+    await _navigationService.navigate(recipeIformationPage);
   }
 }

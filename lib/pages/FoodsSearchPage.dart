@@ -2,6 +2,7 @@ import 'package:icook/model/RecipeRoot.dart';
 import 'package:icook/viewModels/FoodsSearchViewModel.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:icook/widgets/SearchResultCell.dart';
 
 BuildContext globalContext;
 
@@ -77,14 +78,10 @@ class FoodsSearchPage extends StatelessWidget {
             itemCount: snapshot.data.results.length,
             itemBuilder: (BuildContext context, int index) {
               var searchResult = snapshot.data.results.elementAt(index);
-              return Card(
-                child: ListTile(
-                  title: Text(searchResult.title),
-                  subtitle: Text(searchResult.id.toString()),
-                  leading: Image.network(searchResult.image),
-                  trailing: Text(searchResult.id.toString()),
-                ),
-              );
+              return SearchRecipeResultCell(
+                  searchResult: searchResult,
+                  onTap: () => _foodsSearchViewModel
+                      .navigateRecipeInformation(searchResult.id));
             },
           );
         } else {
