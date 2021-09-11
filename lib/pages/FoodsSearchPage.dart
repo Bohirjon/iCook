@@ -16,7 +16,7 @@ class FoodsSearchPage extends StatelessWidget {
       appBar: AppBar(
         leading: StreamBuilder<bool>(
           stream: _foodsSearchViewModel.isLoading,
-          builder: (context, snapshot) => snapshot.data
+          builder: (context, snapshot) => snapshot.hasData && snapshot.data
               ? Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: CircularProgressIndicator(),
@@ -54,7 +54,7 @@ class FoodsSearchPage extends StatelessWidget {
               stream: _foodsSearchViewModel.searchString,
               builder: (context, snapshot) {
                 return IconButton(
-                  onPressed: snapshot.data.isNotEmpty
+                  onPressed: snapshot.hasData && snapshot.data.isNotEmpty
                       ? _foodsSearchViewModel.searchFoods
                       : null,
                   icon: Icon(

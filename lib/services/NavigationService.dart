@@ -26,4 +26,22 @@ class NavigationService extends BaseNavigationService {
     final materialRoute = MaterialPageRoute(builder: (context) => page);
     return Navigator.of(globalContext).push(materialRoute);
   }
+
+  @override
+  void showMaterialBannerMessage(
+      String message, Function dismissAction, String dismissActionLabel) {
+    ScaffoldMessenger.of(globalContext).showMaterialBanner(
+      MaterialBanner(
+        content: Text(message),
+        actions: [
+          MaterialButton(
+            onPressed: () {
+              ScaffoldMessenger.of(globalContext).clearMaterialBanners();
+              dismissAction();
+            },
+          ),
+        ],
+      ),
+    );
+  }
 }

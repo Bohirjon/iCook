@@ -8,6 +8,7 @@ class SearchRecipeResultCell extends StatelessWidget {
 
   final Recipe searchResult;
   final Function() onTap;
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

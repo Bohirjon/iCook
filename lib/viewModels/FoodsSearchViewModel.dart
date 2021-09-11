@@ -23,6 +23,10 @@ class FoodsSearchViewModel {
         .listen((event) => clearFoods());
   }
 
+  void dismiss() {
+    print("dismiss pressed");
+  }
+
   void searchFoods() async {
     isLoading.add(true);
     try {

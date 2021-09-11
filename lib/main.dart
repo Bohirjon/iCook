@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(appBarTheme: AppBarTheme(color: Colors.white)),
+      debugShowCheckedModeBanner: false,
       home: FoodsSearchPage(
         FoodsSearchViewModel(
           FoodReceiptApi(),
