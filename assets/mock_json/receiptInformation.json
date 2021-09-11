@@ -1,0 +1,626 @@
+{
+    "vegetarian": false,
+    "vegan": false,
+    "glutenFree": false,
+    "dairyFree": false,
+    "veryHealthy": false,
+    "cheap": false,
+    "veryPopular": false,
+    "sustainable": false,
+    "weightWatcherSmartPoints": 5,
+    "gaps": "no",
+    "lowFodmap": false,
+    "aggregateLikes": 13,
+    "spoonacularScore": 51.0,
+    "healthScore": 9.0,
+    "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+    "license": "CC BY 3.0",
+    "sourceName": "Foodista",
+    "pricePerServing": 63.85,
+    "extendedIngredients": [
+        {
+            "id": 4053,
+            "aisle": "Oil, Vinegar, Salad Dressing",
+            "image": "olive-oil.jpg",
+            "consistency": "liquid",
+            "name": "olive oil",
+            "nameClean": "olive oil",
+            "original": "2 tablespoons olive oil",
+            "originalString": "2 tablespoons olive oil",
+            "originalName": "olive oil",
+            "amount": 2.0,
+            "unit": "tablespoons",
+            "meta": [],
+            "metaInformation": [],
+            "measures": {
+                "us": {
+                    "amount": 2.0,
+                    "unitShort": "Tbsps",
+                    "unitLong": "Tbsps"
+                },
+                "metric": {
+                    "amount": 2.0,
+                    "unitShort": "Tbsps",
+                    "unitLong": "Tbsps"
+                }
+            }
+        },
+        {
+            "id": 10716050,
+            "aisle": "Pasta and Rice;Canned and Jarred",
+            "image": "cooked-cannellini-beans.png",
+            "consistency": "solid",
+            "name": "cannellini beans",
+            "nameClean": "cannellini beans",
+            "original": "2, 15-ounce cannellini beans (or Great Northern beans), rinsed and drained",
+            "originalString": "2, 15-ounce cannellini beans (or Great Northern beans), rinsed and drained",
+            "originalName": "2, cannellini beans (or Great Northern beans), rinsed and drained",
+            "amount": 15.0,
+            "unit": "ounce",
+            "meta": [
+                "rinsed",
+                "drained",
+                "(or Great Northern beans)"
+            ],
+            "metaInformation": [
+                "rinsed",
+                "drained",
+                "(or Great Northern beans)"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 15.0,
+                    "unitShort": "oz",
+                    "unitLong": "ounces"
+                },
+                "metric": {
+                    "amount": 425.243,
+                    "unitShort": "g",
+                    "unitLong": "grams"
+                }
+            }
+        },
+        {
+            "id": 6615,
+            "aisle": "Canned and Jarred",
+            "image": "chicken-broth.png",
+            "consistency": "liquid",
+            "name": "vegetable stock",
+            "nameClean": "vegetable stock",
+            "original": "1 cup of low-sodium vegetable stock",
+            "originalString": "1 cup of low-sodium vegetable stock",
+            "originalName": "low-sodium vegetable stock",
+            "amount": 1.0,
+            "unit": "cup",
+            "meta": [
+                "low-sodium"
+            ],
+            "metaInformation": [
+                "low-sodium"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 1.0,
+                    "unitShort": "cup",
+                    "unitLong": "cup"
+                },
+                "metric": {
+                    "amount": 236.588,
+                    "unitShort": "ml",
+                    "unitLong": "milliliters"
+                }
+            }
+        },
+        {
+            "id": 14412,
+            "aisle": "Beverages",
+            "image": "water.png",
+            "consistency": "liquid",
+            "name": "water",
+            "nameClean": "water",
+            "original": "3 cups water",
+            "originalString": "3 cups water",
+            "originalName": "water",
+            "amount": 3.0,
+            "unit": "cups",
+            "meta": [],
+            "metaInformation": [],
+            "measures": {
+                "us": {
+                    "amount": 3.0,
+                    "unitShort": "cups",
+                    "unitLong": "cups"
+                },
+                "metric": {
+                    "amount": 709.764,
+                    "unitShort": "ml",
+                    "unitLong": "milliliters"
+                }
+            }
+        },
+        {
+            "id": 11529,
+            "aisle": "Produce",
+            "image": "tomato.png",
+            "consistency": "solid",
+            "name": "tomatoes",
+            "nameClean": "tomato",
+            "original": "2 small tomatoes, diced (you could also use about 1/4 cup of marinara sauce)",
+            "originalString": "2 small tomatoes, diced (you could also use about 1/4 cup of marinara sauce)",
+            "originalName": "tomatoes, diced (you could also use about 1/4 cup of marinara sauce)",
+            "amount": 2.0,
+            "unit": "small",
+            "meta": [
+                "diced",
+                "(you could also use)"
+            ],
+            "metaInformation": [
+                "diced",
+                "(you could also use)"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 2.0,
+                    "unitShort": "small",
+                    "unitLong": "smalls"
+                },
+                "metric": {
+                    "amount": 2.0,
+                    "unitShort": "small",
+                    "unitLong": "smalls"
+                }
+            }
+        },
+        {
+            "id": 11282,
+            "aisle": "Produce",
+            "image": "brown-onion.png",
+            "consistency": "solid",
+            "name": "onion",
+            "nameClean": "onion",
+            "original": "1/4 cup diced onion",
+            "originalString": "1/4 cup diced onion",
+            "originalName": "diced onion",
+            "amount": 0.25,
+            "unit": "cup",
+            "meta": [
+                "diced"
+            ],
+            "metaInformation": [
+                "diced"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 0.25,
+                    "unitShort": "cups",
+                    "unitLong": "cups"
+                },
+                "metric": {
+                    "amount": 59.147,
+                    "unitShort": "ml",
+                    "unitLong": "milliliters"
+                }
+            }
+        },
+        {
+            "id": 11215,
+            "aisle": "Produce",
+            "image": "garlic.png",
+            "consistency": "solid",
+            "name": "garlic clove",
+            "nameClean": "garlic",
+            "original": "2 garlic clove, minced",
+            "originalString": "2 garlic clove, minced",
+            "originalName": "garlic clove, minced",
+            "amount": 2.0,
+            "unit": "",
+            "meta": [
+                "minced"
+            ],
+            "metaInformation": [
+                "minced"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 2.0,
+                    "unitShort": "",
+                    "unitLong": ""
+                },
+                "metric": {
+                    "amount": 2.0,
+                    "unitShort": "",
+                    "unitLong": ""
+                }
+            }
+        },
+        {
+            "id": 10120499,
+            "aisle": "Pasta and Rice",
+            "image": "elbow.jpg",
+            "consistency": "solid",
+            "name": "elbow macaroni",
+            "nameClean": "elbow macaroni",
+            "original": "3/4 cup elbow macaroni (or any small pasta)",
+            "originalString": "3/4 cup elbow macaroni (or any small pasta)",
+            "originalName": "elbow macaroni (or any small pasta)",
+            "amount": 0.75,
+            "unit": "cup",
+            "meta": [
+                "or any small pasta)"
+            ],
+            "metaInformation": [
+                "or any small pasta)"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 0.75,
+                    "unitShort": "cups",
+                    "unitLong": "cups"
+                },
+                "metric": {
+                    "amount": 177.441,
+                    "unitShort": "ml",
+                    "unitLong": "milliliters"
+                }
+            }
+        },
+        {
+            "id": 1033,
+            "aisle": "Cheese",
+            "image": "parmesan.jpg",
+            "consistency": "solid",
+            "name": "parmesan cheese",
+            "nameClean": "parmesan",
+            "original": "1/4 cup Parmesan cheese, grated",
+            "originalString": "1/4 cup Parmesan cheese, grated",
+            "originalName": "Parmesan cheese, grated",
+            "amount": 0.25,
+            "unit": "cup",
+            "meta": [
+                "grated"
+            ],
+            "metaInformation": [
+                "grated"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 0.25,
+                    "unitShort": "cups",
+                    "unitLong": "cups"
+                },
+                "metric": {
+                    "amount": 59.147,
+                    "unitShort": "ml",
+                    "unitLong": "milliliters"
+                }
+            }
+        },
+        {
+            "id": 1032009,
+            "aisle": "Spices and Seasonings",
+            "image": "red-pepper-flakes.jpg",
+            "consistency": "solid",
+            "name": "red pepper flakes",
+            "nameClean": "red pepper flakes",
+            "original": "1 teaspoon hot pepper flakes",
+            "originalString": "1 teaspoon hot pepper flakes",
+            "originalName": "hot pepper flakes",
+            "amount": 1.0,
+            "unit": "teaspoon",
+            "meta": [
+                "hot"
+            ],
+            "metaInformation": [
+                "hot"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 1.0,
+                    "unitShort": "tsp",
+                    "unitLong": "teaspoon"
+                },
+                "metric": {
+                    "amount": 1.0,
+                    "unitShort": "tsp",
+                    "unitLong": "teaspoon"
+                }
+            }
+        },
+        {
+            "id": 2047,
+            "aisle": "Spices and Seasonings",
+            "image": "salt.jpg",
+            "consistency": "solid",
+            "name": "salt",
+            "nameClean": "salt",
+            "original": "1/4 teaspoon salt",
+            "originalString": "1/4 teaspoon salt",
+            "originalName": "salt",
+            "amount": 0.25,
+            "unit": "teaspoon",
+            "meta": [],
+            "metaInformation": [],
+            "measures": {
+                "us": {
+                    "amount": 0.25,
+                    "unitShort": "tsps",
+                    "unitLong": "teaspoons"
+                },
+                "metric": {
+                    "amount": 0.25,
+                    "unitShort": "tsps",
+                    "unitLong": "teaspoons"
+                }
+            }
+        },
+        {
+            "id": 1002030,
+            "aisle": "Spices and Seasonings",
+            "image": "pepper.jpg",
+            "consistency": "solid",
+            "name": "black pepper",
+            "nameClean": "black pepper",
+            "original": "1 teaspoon black pepper",
+            "originalString": "1 teaspoon black pepper",
+            "originalName": "black pepper",
+            "amount": 1.0,
+            "unit": "teaspoon",
+            "meta": [
+                "black"
+            ],
+            "metaInformation": [
+                "black"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 1.0,
+                    "unitShort": "tsp",
+                    "unitLong": "teaspoon"
+                },
+                "metric": {
+                    "amount": 1.0,
+                    "unitShort": "tsp",
+                    "unitLong": "teaspoon"
+                }
+            }
+        },
+        {
+            "id": 11297,
+            "aisle": "Produce;Spices and Seasonings",
+            "image": "parsley.jpg",
+            "consistency": "solid",
+            "name": "fresh parsley",
+            "nameClean": "parsley",
+            "original": "1 tablespoon fresh parsley (more for garnish if you'd like), torn into small pieces",
+            "originalString": "1 tablespoon fresh parsley (more for garnish if you'd like), torn into small pieces",
+            "originalName": "fresh parsley (more for garnish if you'd like), torn into small pieces",
+            "amount": 1.0,
+            "unit": "tablespoon",
+            "meta": [
+                "fresh",
+                "for garnish if you'd like), torn into small pieces"
+            ],
+            "metaInformation": [
+                "fresh",
+                "for garnish if you'd like), torn into small pieces"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 1.0,
+                    "unitShort": "Tbsp",
+                    "unitLong": "Tbsp"
+                },
+                "metric": {
+                    "amount": 1.0,
+                    "unitShort": "Tbsp",
+                    "unitLong": "Tbsp"
+                }
+            }
+        }
+    ],
+    "id": 654835,
+    "title": "Pasta e Fagioli (Pasta and Beans)",
+    "readyInMinutes": 45,
+    "servings": 6,
+    "sourceUrl": "https://www.foodista.com/recipe/QF3SKD4Y/pasta-e-fagioli-pasta-and-beans",
+    "image": "https://spoonacular.com/recipeImages/654835-556x370.jpg",
+    "imageType": "jpg",
+    "summary": "Pastan e Fagioli (Pastan and Beans) is a Mediterranean soup. This recipe makes 6 servings with <b>187 calories</b>, <b>8g of protein</b>, and <b>6g of fat</b> each. For <b>64 cents per serving</b>, this recipe <b>covers 7%</b> of your daily requirements of vitamins and minerals. This recipe from Foodista has 13 fans. Head to the store and pick up pepper flakes, cannellini beans, parsley, and a few other things to make it today. From preparation to the plate, this recipe takes roughly <b>roughly 45 minutes</b>. Taking all factors into account, this recipe <b>earns a spoonacular score of 50%</b>, which is solid. Similar recipes are <a href=\"https://spoonacular.com/recipes/pasta-e-fagioli-con-salsicce-pasta-and-beans-with-sausage-106972\">Pastan e Fagioli con Salsicce (Pastan and Beans with Sausage)</a>, <a href=\"https://spoonacular.com/recipes/pasta-e-fagioli-pasta-and-beans-by-sarah-olsen-630921\">Pastan E Fagioli (Pastan and Beans) by Sarah Olsen</a>, and <a href=\"https://spoonacular.com/recipes/pasta-e-fagioli-pasta-and-beans-566878\">Pastan e Fagioli (Pastan and Beans)</a>.",
+    "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+    ],
+    "dishTypes": [
+        "soup"
+    ],
+    "diets": [],
+    "occasions": [],
+    "winePairing": {},
+    "instructions": "In a large stock pan over medium-high heat, add the olive oil and the onion. Allow the onion to cook until it is tender (about 3 minutes). Add the tomato (or marinara sauce) and garlic and incorporate it into the mixture. Cook for just 1-2 minutes (be careful not to burn the garlic).\nAdd the vegetable stock, water, salt, pepper and red pepper flakes. Bring this to a boil and then add your pasta. Lower the heat and allow the pasta to cook until its about 3/4 of the way finished (still slightly firm).\nAdd your beans and allow the mixture to continue cooking until the pasta is fully cooked (about 10-15 minutes). Add the parsley toward the end of your cooking time. Taste and adjust the seasoning as needed.\nServe in individual bowls with extra parsley as garnish and sprinkle with the Parmesan cheese.",
+    "analyzedInstructions": [
+        {
+            "name": "",
+            "steps": [
+                {
+                    "number": 1,
+                    "step": "In a large stock pan over medium-high heat, add the olive oil and the onion. Allow the onion to cook until it is tender (about 3 minutes).",
+                    "ingredients": [
+                        {
+                            "id": 4053,
+                            "name": "olive oil",
+                            "localizedName": "olive oil",
+                            "image": "olive-oil.jpg"
+                        },
+                        {
+                            "id": 11282,
+                            "name": "onion",
+                            "localizedName": "onion",
+                            "image": "brown-onion.png"
+                        },
+                        {
+                            "id": 1006615,
+                            "name": "stock",
+                            "localizedName": "stock",
+                            "image": "chicken-broth.png"
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404645,
+                            "name": "frying pan",
+                            "localizedName": "frying pan",
+                            "image": "pan.png"
+                        }
+                    ],
+                    "length": {
+                        "number": 3,
+                        "unit": "minutes"
+                    }
+                },
+                {
+                    "number": 2,
+                    "step": "Add the tomato (or marinara sauce) and garlic and incorporate it into the mixture. Cook for just 1-2 minutes (be careful not to burn the garlic).",
+                    "ingredients": [
+                        {
+                            "id": 10111549,
+                            "name": "marinara sauce",
+                            "localizedName": "marinara sauce",
+                            "image": "tomato-sauce-or-pasta-sauce.jpg"
+                        },
+                        {
+                            "id": 11215,
+                            "name": "garlic",
+                            "localizedName": "garlic",
+                            "image": "garlic.png"
+                        },
+                        {
+                            "id": 11529,
+                            "name": "tomato",
+                            "localizedName": "tomato",
+                            "image": "tomato.png"
+                        }
+                    ],
+                    "equipment": [],
+                    "length": {
+                        "number": 2,
+                        "unit": "minutes"
+                    }
+                },
+                {
+                    "number": 3,
+                    "step": "Add the vegetable stock, water, salt, pepper and red pepper flakes. Bring this to a boil and then add your pasta. Lower the heat and allow the pasta to cook until its about 3/4 of the way finished (still slightly firm).",
+                    "ingredients": [
+                        {
+                            "id": 1032009,
+                            "name": "red pepper flakes",
+                            "localizedName": "red pepper flakes",
+                            "image": "red-pepper-flakes.jpg"
+                        },
+                        {
+                            "id": 6615,
+                            "name": "vegetable stock",
+                            "localizedName": "vegetable stock",
+                            "image": "chicken-broth.png"
+                        },
+                        {
+                            "id": 1002030,
+                            "name": "pepper",
+                            "localizedName": "pepper",
+                            "image": "pepper.jpg"
+                        },
+                        {
+                            "id": 20420,
+                            "name": "pasta",
+                            "localizedName": "pasta",
+                            "image": "fusilli.jpg"
+                        },
+                        {
+                            "id": 14412,
+                            "name": "water",
+                            "localizedName": "water",
+                            "image": "water.png"
+                        },
+                        {
+                            "id": 2047,
+                            "name": "salt",
+                            "localizedName": "salt",
+                            "image": "salt.jpg"
+                        }
+                    ],
+                    "equipment": []
+                },
+                {
+                    "number": 4,
+                    "step": "Add your beans and allow the mixture to continue cooking until the pasta is fully cooked (about 10-15 minutes).",
+                    "ingredients": [
+                        {
+                            "id": 0,
+                            "name": "beans",
+                            "localizedName": "beans",
+                            "image": "kidney-beans.jpg"
+                        },
+                        {
+                            "id": 20420,
+                            "name": "pasta",
+                            "localizedName": "pasta",
+                            "image": "fusilli.jpg"
+                        }
+                    ],
+                    "equipment": [],
+                    "length": {
+                        "number": 15,
+                        "unit": "minutes"
+                    }
+                },
+                {
+                    "number": 5,
+                    "step": "Add the parsley toward the end of your cooking time. Taste and adjust the seasoning as needed.",
+                    "ingredients": [
+                        {
+                            "id": 1042027,
+                            "name": "seasoning",
+                            "localizedName": "seasoning",
+                            "image": "seasoning.png"
+                        },
+                        {
+                            "id": 11297,
+                            "name": "parsley",
+                            "localizedName": "parsley",
+                            "image": "parsley.jpg"
+                        }
+                    ],
+                    "equipment": []
+                },
+                {
+                    "number": 6,
+                    "step": "Serve in individual bowls with extra parsley as garnish and sprinkle with the Parmesan cheese.",
+                    "ingredients": [
+                        {
+                            "id": 1033,
+                            "name": "parmesan",
+                            "localizedName": "parmesan",
+                            "image": "parmesan.jpg"
+                        },
+                        {
+                            "id": 11297,
+                            "name": "parsley",
+                            "localizedName": "parsley",
+                            "image": "parsley.jpg"
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404783,
+                            "name": "bowl",
+                            "localizedName": "bowl",
+                            "image": "bowl.jpg"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "originalId": null,
+    "spoonacularSourceUrl": "https://spoonacular.com/pasta-e-fagioli-pasta-and-beans-654835"
+}

@@ -1,94 +1,36 @@
 import 'dart:convert';
-
+import 'package:flutter/services.dart';
 import 'package:icook/abstractions/BaseFoodReceiptApi.dart';
 import 'package:icook/model/RecipeInformation.dart';
 import 'package:icook/model/RecipeRoot.dart';
 
 class MockFoodReceiprtApi extends BaseFoodReceipt {
-  String _getJson() {
-    return '''
-{
-    "results": [
-        {
-            "id": 716426,
-            "title": "Cauliflower, Brown Rice, and Vegetable Fried Rice",
-            "image": "https://spoonacular.com/recipeImages/716426-312x231.jpg",
-            "imageType": "jpg"
-        },
-        {
-            "id": 715594,
-            "title": "Homemade Garlic and Basil French Fries",
-            "image": "https://spoonacular.com/recipeImages/715594-312x231.jpg",
-            "imageType": "jpg"
-        },
-        {
-            "id": 715497,
-            "title": "Berry Banana Breakfast Smoothie",
-            "image": "https://spoonacular.com/recipeImages/715497-312x231.jpg",
-            "imageType": "jpg"
-        },
-        {
-            "id": 644387,
-            "title": "Garlicky Kale",
-            "image": "https://spoonacular.com/recipeImages/644387-312x231.jpg",
-            "imageType": "jpg"
-        },
-        {
-            "id": 715392,
-            "title": "Chicken Tortilla Soup (Slow Cooker)",
-            "image": "https://spoonacular.com/recipeImages/715392-312x231.jpg",
-            "imageType": "jpg"
-        },
-        {
-            "id": 716268,
-            "title": "African Chicken Peanut Stew",
-            "image": "https://spoonacular.com/recipeImages/716268-312x231.jpg",
-            "imageType": "jpg"
-        },
-        {
-            "id": 716381,
-            "title": "Nigerian Snail Stew",
-            "image": "https://spoonacular.com/recipeImages/716381-312x231.jpg",
-            "imageType": "jpg"
-        },
-        {
-            "id": 782601,
-            "title": "Red Kidney Bean Jambalaya",
-            "image": "https://spoonacular.com/recipeImages/782601-312x231.jpg",
-            "imageType": "jpg"
-        },
-        {
-            "id": 794349,
-            "title": "Broccoli and Chickpea Rice Salad",
-            "image": "https://spoonacular.com/recipeImages/794349-312x231.jpg",
-            "imageType": "jpg"
-        },
-        {
-            "id": 715446,
-            "title": "Slow Cooker Beef Stew",
-            "image": "https://spoonacular.com/recipeImages/715446-312x231.jpg",
-            "imageType": "jpg"
-        }
-    ],
-    "offset": 0,
-    "number": 10,
-    "totalResults": 5078
-}
-''';
+  String get _infoJsonPath => "assets/mock_json/receiptInformation.json";
+  String get _searchJsonPath => "assets/mock_json/searchResult.json";
+  Future<String> _loadJsonFile(String path) {
+    final json = rootBundle.loadString(path);
+    return json;
   }
 
   @override
   Future<RecipeRoot> search(String searchkey) async {
     await Future.delayed(Duration(milliseconds: 240));
-    var jsonString = _getJson();
+    var jsonString = await _loadJsonFile(_searchJsonPath);
     var jsonDecoded = json.decode(jsonString);
     var result = RecipeRoot.fromJson(jsonDecoded);
     return result;
   }
 
   @override
-  Future<RecipeInformation> getRecipeInformation(int recipeId) {
-    // TODO: implement getRecipeInformation
-    throw UnimplementedError();
+  Future<RecipeInformation> getRecipeInformation(int recipeId) async {
+    await _simulate();
+    final jsonString = await _loadJsonFile(_infoJsonPath);
+    final decoded = json.decode(jsonString);
+    final result = RecipeInformation.fromJson(decoded);
+    return result;
+  }
+
+  Future _simulate() {
+    return Future.delayed(Duration(milliseconds: 240));
   }
 }
